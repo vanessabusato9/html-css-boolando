@@ -152,6 +152,10 @@ main {
     padding: 5px;
 }
 
+.img-left:hover .img-width {
+    background-image: url(/img/img/1b.webp
+}
+
 /*Footer*/
 .bg-footer {
     background-color: gray;
