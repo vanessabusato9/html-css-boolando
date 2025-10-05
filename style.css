@@ -23,7 +23,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 4;
 }
 
 #header-container {
@@ -73,7 +73,7 @@ main {
 }
 
 .first-row {
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .img-left {
@@ -106,6 +106,7 @@ main {
     top: 10px;
     right: 10px;
     min-height: 20px;
+    z-index: 4;
 }
 
 .position-heart-left:hover {
@@ -125,6 +126,7 @@ main {
     top: 10px;
     right: 10px;
     min-height: 20px;
+    z-index: 4;
 }
 
 .position-heart-right {
@@ -132,6 +134,7 @@ main {
     top: 10px;
     right: 10px;
     min-height: 20px;
+    z-index: 4;
 }
 
 .discount {
@@ -139,6 +142,7 @@ main {
     top: 385px;
     left: 10px;
     min-height: 20px;
+    z-index: 3;
 }
 
 .mark-red {
@@ -152,8 +156,45 @@ main {
     padding: 5px;
 }
 
-.img-left:hover .img-width {
-    background-image: url(/img/img/1b.webp
+.image-above {
+    width: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper img {
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* La prima immagine è visibile per default */
+.image-wrapper img:first-child {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* La seconda immagine è nascosta per default */
+.image-wrapper .image-above {
+    opacity: 0;
+    z-index: 2; /* Sopra la prima */
+}
+
+/* Quando passo il mouse sul contenitore, nascondo la prima... */
+.image-wrapper:hover img:first-child {
+    opacity: 0;
+}
+
+/* ...e mostro la seconda */
+.image-wrapper:hover .image-above {
+    opacity: 1;
 }
 
 /*Footer*/
