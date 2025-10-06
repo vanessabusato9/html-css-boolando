@@ -107,6 +107,7 @@ main {
     right: 10px;
     min-height: 20px;
     z-index: 4;
+    background-color: yellow;
 }
 
 .position-heart-left:hover {
@@ -167,7 +168,7 @@ main {
 }
 
 .image-wrapper img {
-     position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -199,6 +200,7 @@ main {
 
 /*Footer*/
 .bg-footer {
-    background-color: gray;
-    min-height: 30px;
+    background-color: black;
+    min-height: 60px;
 }
+
