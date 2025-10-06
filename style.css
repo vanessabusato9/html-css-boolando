@@ -104,10 +104,10 @@ main {
 .position-heart-left {
     position: absolute;
     top: 10px;
-    right: 10px;
-    min-height: 20px;
+    right: 0;
     z-index: 4;
-    background-color: yellow;
+    background-color: white;
+    padding: 10px 15px;
 }
 
 .position-heart-left:hover {
@@ -125,17 +125,21 @@ main {
 .position-heart-center {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 0px;
     min-height: 20px;
     z-index: 4;
+    padding: 10px 15px;
+    background-color: white;
 }
 
 .position-heart-right {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 0px;
     min-height: 20px;
     z-index: 4;
+    padding: 10px 15px;
+    background-color: white;
 }
 
 .discount {
@@ -202,5 +206,9 @@ main {
 .bg-footer {
     background-color: black;
     min-height: 60px;
+}
+
+.text-white {
+    color: white;
 }
 
