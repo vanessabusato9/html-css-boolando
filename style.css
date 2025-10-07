@@ -27,7 +27,6 @@ header {
 }
 
 #header-container {
-    background-color: yellow;
     min-height: 30px;
 }
 
@@ -48,6 +47,7 @@ header {
 .nav-user-access {
     width: 20%;
     text-align: right;
+    padding-right: 10px;
 }
 
 .dashed {
@@ -97,7 +97,6 @@ main {
 .img-right {
     width: 33.33%;
     min-height: 400px;
-    margin-right: 20px;
     position: relative;
 }
 
@@ -212,7 +211,7 @@ main {
     font-weight: bold;
     color: gray;
     font-size: 0.9rem;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .product-name {
@@ -235,9 +234,13 @@ main {
 .bg-footer {
     background-color: black;
     min-height: 60px;
+    padding-top: 10px;
 }
 
 .text-white {
     color: white;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    font-size: small;
 }
 
